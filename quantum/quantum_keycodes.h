@@ -389,6 +389,7 @@ enum quantum_keycodes {
 
     MI_BENDD, // Bend down
     MI_BENDU, // Bend up
+    MI_DEEP,  // momentary transpose down an octave
 #endif // MIDI_ADVANCED
 
     // Backlight functionality

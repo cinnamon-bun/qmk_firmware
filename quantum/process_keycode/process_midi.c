@@ -57,7 +57,7 @@ inline uint8_t compute_velocity(uint8_t setting)
 
 void midi_init(void)
 {
-    midi_config.octave = MI_OCT_2 - MIDI_OCTAVE_MIN;
+    midi_config.octave = MI_OCT_1 - MIDI_OCTAVE_MIN;
     midi_config.transpose = 0;
     midi_config.velocity = (MIDI_VELOCITY_MAX - MIDI_VELOCITY_MIN);
     midi_config.channel = 0;
@@ -240,6 +240,14 @@ bool process_midi(uint16_t keycode, keyrecord_t *record)
             else {
                 midi_send_pitchbend(&midi_device, midi_config.channel, 0);
                 dprintf("midi pitchbend channel:%d amount:%d\n", midi_config.channel, 0);
+            }
+            return false;
+        case MI_DEEP:
+            if (record->event.pressed) {
+                midi_config.octave -= 2;
+            }
+            else {
+                midi_config.octave += 2;
             }
             return false;
     };
