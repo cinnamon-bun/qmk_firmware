@@ -6,12 +6,12 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //  1,          2,        3,        4,        5,        6,        7,        8,        9,          1,        2,        3,        4,        5,        6,        7,        8,        9,
     [_BASE] = LAYOUT( \
-        MO(_FN),    MI_Cs_1,  MI_E_1,   MI_G_1,   MI_As_1,  MI_Cs_2,  MI_E_2,   MI_G_2,   MI_As_2,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_DEL,   \
-        MI_A,       MI_C_1,   MI_Ds_1,  MI_Fs_1,  MI_A_1,   MI_C_2,   MI_Ds_2,  MI_Fs_2,  MI_A_2,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MINS,  KC_EQL,   KC_BSPC,  \
+        MO(_FN),    MI_C_1,   MI_Ds_1,  MI_Fs_1,  MI_A_1,   MI_C_2,   MI_Ds_2,  MI_Fs_2,  MI_A_2,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MINS,  KC_EQL,   KC_BSPC,  \
         MI_Gs,      MI_B,     MI_D_1,   MI_F_1,   MI_Gs_1,  MI_B_1,   MI_D_2,   MI_F_2,   MI_Gs_2,    KC_T,     KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     KC_LBRC,  KC_RBRC,  KC_BSLS,  \
         MI_G,       MI_As,    MI_Cs_1,  MI_E_1,   MI_G_1,   MI_As_1,  MI_Cs_2,  MI_E_2,   MI_G_2,     KC_G,     KC_H,     KC_J,     KC_K,     KC_L,     KC_SCLN,  KC_QUOT,  KC_ENT,   KC_ENT,   \
-        MI_Fs,      MI_A,     MI_C_1,   MI_Ds_1,  MI_Fs_1,  MI_A_1,   MI_C_2,   MI_Ds_2,  MI_SUS,     KC_B,     KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  KC_UP,    XXXXXXX,  \
-        MI_F,       MI_Gs,    MI_B,     MI_D_1,   MI_F_1,   MI_Gs_1,  MI_B_1,   MI_D_2,   MI_DEEP,    KC_BSPC,  KC_SPC,   KC_SPC,   KC_RGUI,  KC_RALT,  KC_RCTL,  KC_LEFT,  KC_DOWN,  KC_RGHT   \
+        MI_Fs,      MI_A,     MI_C_1,   MI_Ds_1,  MI_Fs_1,  MI_A_1,   MI_C_2,   MI_Ds_2,  MI_Fs_2,    KC_B,     KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT,  KC_UP,    XXXXXXX,  \
+        MI_F,       MI_Gs,    MI_B,     MI_D_1,   MI_F_1,   MI_Gs_1,  MI_B_1,   MI_D_2,   MI_SUS,     KC_BSPC,  KC_SPC,   KC_SPC,   KC_RGUI,  KC_RALT,  KC_RCTL,  KC_LEFT,  KC_DOWN,  KC_RGHT,  \
+        MI_E,       MI_G,     MI_As,    MI_Cs_1,  MI_E_1,   MI_G_1,   MI_As_1,  MI_Cs_2,  MI_DEEP,    KC_BSPC,  KC_SPC,   KC_SPC,   KC_RGUI,  KC_RALT,  KC_RCTL,  KC_LEFT,  KC_DOWN,  KC_RGHT   \
     ),
     [_FN] = LAYOUT( \
         _______,    MI_CH6,   _______,  _______,  _______,  _______,  KC_MUTE,  KC_VOLD,  KC_VOLU,    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  \
