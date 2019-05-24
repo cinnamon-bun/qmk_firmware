@@ -65,3 +65,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* override number of MIDI tone keycodes (each octave adds 12 keycodes and allocates 12 bytes) */
 #define MIDI_TONE_KEYCODE_OCTAVES 3
+
+/* advertise that this device uses only 100mA of power.
+    The default QMK value of 500 causes iPads to refuse to connect
+    unless they are plugged into wall power.
+ */
+#define USB_MAX_POWER_CONSUMPTION 100
